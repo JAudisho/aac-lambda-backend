@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-aacbackend-dev-2b4c9-authRole",
+      "UnauthRoleArn": "arn:aws:iam::954976322234:role/amplify-aacbackend-dev-2b4c9-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::954976322234:role/amplify-aacbackend-dev-2b4c9-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-aacbackend-dev-2b4c9-deployment",
+      "UnauthRoleName": "amplify-aacbackend-dev-2b4c9-unauthRole",
+      "StackName": "amplify-aacbackend-dev-2b4c9",
+      "StackId": "arn:aws:cloudformation:us-east-2:954976322234:stack/amplify-aacbackend-dev-2b4c9/701d5260-09f6-11f0-9d2c-06f992ce26c9",
+      "AmplifyAppId": "d212mnuht102ou"
+    },
+    "categories": {
+      "hosting": {
+        "S3AndCloudFront": {}
+      },
+      "function": {
+        "lambdafunction": {
+          "bucketTts": "aac-tts-audio",
+          "bucketImagessvgs": "aac-images-svgs",
+          "appRegion": "us-east-2",
+          "deploymentBucketName": "amplify-aacbackend-dev-2b4c9-deployment",
+          "s3Key": "amplify-builds/lambdafunction-37707a774d316f71392f-build.zip"
+        }
+      }
+    }
+  }
+}

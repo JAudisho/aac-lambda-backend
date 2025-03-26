@@ -1,0 +1,21 @@
+version: 1
+backend:
+  phases:
+    build:
+      commands:
+        - echo "No backend build step"
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install
+    build:
+      commands:
+        - npm run build || echo "No build script defined"
+  artifacts:
+    baseDirectory: .
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

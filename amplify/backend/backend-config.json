@@ -1,0 +1,66 @@
+{
+  "function": {
+    "lambdafunction": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "HostingBucketName"
+          ],
+          "category": "hosting",
+          "resourceName": "S3AndCloudFront"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "providerPlugin": "awscloudformation",
+      "service": "S3AndCloudFront"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_lambdafunction_appRegion": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lambdafunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_lambdafunction_bucketImagessvgs": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lambdafunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_lambdafunction_bucketTts": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lambdafunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_lambdafunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lambdafunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_lambdafunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lambdafunction"
+        }
+      ]
+    }
+  }
+}

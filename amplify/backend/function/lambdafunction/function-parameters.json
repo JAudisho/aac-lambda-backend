@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "hosting": {
+      "S3AndCloudFront": [
+        "create",
+        "read"
+      ]
+    }
+  },
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "bucketTts",
+      "environmentVariableName": "BUCKET_TTS"
+    },
+    {
+      "cloudFormationParameterName": "bucketImagessvgs",
+      "environmentVariableName": "BUCKET_IMAGESSVGS"
+    },
+    {
+      "cloudFormationParameterName": "appRegion",
+      "environmentVariableName": "APP_REGION"
+    }
+  ]
+}
